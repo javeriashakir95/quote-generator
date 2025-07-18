@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quote of the Day</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head >
+<body>
+  <!-- Welcome Screen -->
+  <div class="welcome-screen" id="welcome">
+    <h1>Welcome to Quote of the Day</h1>
+    <p>Your daily dose of motivation 💬</p>
+    <button onclick="startApp()">Start</button>
+  </div>
+
+  <!-- Main App -->
+  <div class="container" id="mainApp">
+    <h1>Feeling low???</h1>
+    <div class="quote" id="quote">Loading...</div>
+    <div class="author" id="author"></div>
+    <div class="meta" id="timestamp"></div>
+    <button onclick="fetchQuote()">🔁 New Quote</button>
+    <button onclick="copyQuote()">📋 Copy</button>
+    <div class="history" id="history"></div>
+    <button onclick="clearHistory()">🧹 Clear History</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

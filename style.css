@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('img/wallpaper.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2c2c2c;
+}
+
+.container,
+.welcome-screen {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.welcome-screen {
+  display: block;
+}
+
+.container {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #4a4a4a;
+}
+
+.quote {
+  font-family: 'Sacramento', cursive;
+  font-size: 2em;
+  color: #333;
+  margin: 20px 0;
+}
+
+.author {
+  font-style: italic;
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.meta {
+  font-size: 0.85em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #d9c3af; /* Softer pastel brown */
+  color: #3e3e3e;
+  padding: 10px 24px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  margin: 8px 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-shadow: 0.5px 0.5px #fff;
+  border: 1px solid #cbb8a0;
+
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #e7d4c3;
+  color: #2a2a2a;
+  
+}
+
+
+.history {
+  margin-top: 20px;
+  max-height: 120px;
+  overflow-y: auto;
+  text-align: left;
+  font-size: 0.85em;
+  color: #555;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .quote {
+    font-size: 1.6em;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+
+  .author {
+    font-size: 1em;
+  }
+}
+@media (max-width: 768px) {
+  .container,
+  .welcome-screen {
+    width: 90%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .quote {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .author {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
